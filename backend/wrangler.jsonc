@@ -4,13 +4,21 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "backend",
+	"name": "tuck-url",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-08-25",
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "tuck_url_db",
+			"database_name": "tuck-url-db",
+			"database_id": "5976d840-0c2a-4ad7-9658-70c148901080",
+			"remote": true
+		}
+	],
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

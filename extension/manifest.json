@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tuck URL",
+  "version": "0.1.0",
+  "description": "Quickly shorten URLs",
+
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://tuck-url.general-workers.workers.dev/*",
+    "http://localhost:8787/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tuck URL"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  }
+}
