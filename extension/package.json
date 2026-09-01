@@ -5,7 +5,8 @@
   "main": "background.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./popup.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./popup.css --minify"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./popup.css --minify",
+    "package:extension": "npm run build && zip -r -FS ../tuck-url-extension.zip manifest.json popup.html popup.js popup.css icons"
   },
   "keywords": [],
   "author": "",
