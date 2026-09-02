@@ -1,7 +1,10 @@
 # Tuck URL
 
 A Chrome extension for shortening URLs with custom handles, expiration dates, and smart caching. Powered by Cloudflare Workers + D1.
+
 Published Chrome Extension: https://chromewebstore.google.com/detail/tuck-url/dnjdbbpkjlnnpbkhhgkpgkdnkbgfhlbo
+
+Privacy Policy: https://luan-n.github.io//tuck-url/privacy.html
 ## Features
 
 ✨ Auto-loads current tab URL  
