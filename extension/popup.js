@@ -1,6 +1,4 @@
-// API Configuration - update this with your actual Cloudflare Workers URL
-const API_BASE_URL = 'https://tuck-url.general-workers.workers.dev';
-// const API_BASE_URL = 'http://localhost:8787'
+const API_BASE_URL = 'http://localhost:8787';
 const currentUrlInput = document.querySelector("#currentUrl");
 const shortenBtn = document.querySelector("#shortenBtn");
 const outputSection = document.querySelector("#outputSection");
@@ -101,7 +99,7 @@ shortenBtn.addEventListener('click', async () => {
     
     if (response.ok) {
       shortenedUrlInput.value = data.shortUrl;
-      statusMessage.textContent = "✓ Success! " + data.message;``
+      statusMessage.textContent = "✓ Success! " + data.message;
       // Save to storage on success
       saveToStorage(url, shortenedUrlInput.value);
     } else {

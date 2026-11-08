@@ -32,5 +32,8 @@ npm run deploy
 2. Enable "Developer mode"
 3. Click "Load unpacked"
 4. Select the `extension/` folder
-5. Update `API_BASE_URL` in `popup.js` to your Cloudflare Workers URL
 
+## Local Development
+
+1. Start the local backend with `cd backend && npm run dev` (Wrangler listens on `http://localhost:8787`).
+2. Load or reload the unpacked extension from the `extension/` folder. It is configured to use the local backend.
